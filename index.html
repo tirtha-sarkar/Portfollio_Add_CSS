@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Tirtha sarkar" />
+    <meta name = "keywords" content="Portfolio,html,tirtha sarkar" />
+    <meta name="description" content="Tirtha babu sarkar" />
+    <title>My Portfolio</title>
+    <!--font awesome.cdn-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!--Section: navber  -->
+    <header>
+        <nav>
+            <ul>
+             <li>
+                 <a href="#aboutme" >About me</a>
+             </li>
+             <li>
+                 <a href="#skill">Skills</a>
+             </li>
+             <li>
+                 <a href="#project">Project</a>
+             </li>
+             <li>
+                 <a href="#contact">Contact</a>
+             </li>
+            </ul> 
+             
+         </nav>
+
+    </header>
+    
+      
+    <main>
+        <!--Section: Intro -->
+    <section id="intro" class="intro card">
+        
+            <h1 class="intro__title" >Tirtha Babu Sarkar</h1>
+        <p class="intro__description"><em>Computer science and Engineering</em> </p>
+
+    </section>
+
+    <!--Section: About me -->
+    <section id="aboutme" class="card">
+        
+        <h2>About me</h2>
+        <a href="https://www.linkedin.com/in/tirtha-babu-sarkar-b3ba58316/"></a>
+            <img src="./images/tbs.jpeg" alt="Tirtha Sarkar" height="200" />  </a>
+        <p><strong>Experience:</strong> 5 year expercinence in social media platform.</p>
+        <p><strong>Educatiom:</strong> Green University of Bangladesh</p>
+    </section>
+    
+ 
+
+
+    <!--Section: Skill -->
+    <section id="skill" class="card">
+        
+        <h2>Skills</h2>
+
+    <table>
+        <thead>
+         <th>Technolongy</th>
+         <th>Proficiency</th>
+
+        </thead>
+
+        <tbody>
+        <tr>
+        <td>C</td>
+        <td rowspan="2">Intermediated</td> 
+        </tr>  
+        <tr>
+            <td>HTML</td>
+            
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>Learning</td>
+        </tr>
+
+        </tbody>
+    </table>
+    
+    <div>
+        <h3>Experience Level</h3>
+        <lavel for="experiencelavel">Experience</lavel>
+        <meter id="experiencelavel" min="0" max="10" value="5">6 Month</meter>
+    </div>
+    </section>
+
+    <!--Section: Project -->
+    <section id="project" class="card">
+        <h2>Project</h2>
+        <ol>
+          <li><a target="_blank" href="https://github.com/tirtha-sarkar/Portfolio-HTML">Portfolio website</a></li>
+          <li>Blog Website</li>
+        </ol>
+    </section>
+
+    <!--<video ,width="100" height="300" controls>
+        <source src="./Assets/04 tik.mp4" type="video/mp4" />
+    </video> -->
+
+
+        <!--Section: Contact-->
+     <section id="contact" class="card">
+        <h2>Contact</h2>
+
+        <form
+        action="https://formspree.io/f/mzzpwrrl"
+        method="POST">
+            <div>
+                <label for="name">Name : </label> 
+                <input type="text" id="name" name="name" required/>
+            </div><br />
+           
+            
+            <div>
+                <label for="email">Email : </label> 
+                <input type="email" id="email" name="email"  required />
+            </div> <br />
+
+            <div>
+                <label for="Age">Age : </label> 
+                <input type="number" id="Age" name="Age" min="18" max="60" required/>
+            </div> <br />
+
+            <div>
+                <label for="image" >Upload Images</label>
+                <input type="image" id="image" name="image" accept="image/*" />
+            </div> <br />
+
+            <div>
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                    <option value="Inquiry" >Inquiry</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Job">Opportunity</option>
+                </select>
+            </div> <br /> 
+
+
+            <div>
+                <label for="message">Message : </label> 
+                <textarea name="message" id="message" name="message" col="30" row="10" textarea> </textarea> 
+                
+            </div> <br />
+           
+           <div>
+            <button type="submit" >Submit</button>
+            <button type="reset">Clear</button>
+ 
+           </div>
+           
+        </form>
+
+     </section>
+
+
+    </main>
+
+    
+    <!--footer -->
+    <footer>
+       <div> <p  class="Copyright">Copyright reserved  by &copy; Tirtha Sarkar</p>
+        <p>Developed with &hearts; </p>
+        </div>
+    
+    <div class="social-media">
+        <h3>Follow me</h3>
+    <ul>
+
+        <li>
+            <a href="https://www.facebook.com/thirtho.sarkar.5?mibextid=ZbWKwL" target="_blank" ><i class="fa-brands fa-facebook"></i></a>
+        </li>
+    <li>
+        <a href="https://www.linkedin.com/in/tirtha-babu-sarkar-b3ba58316/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </li> 
+
+    </ul>
+    </div>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57405.93882021181!2d88.80781065404791!3d25.93945437332156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e359358ddd831f%3A0xfbb7a3268c4659b6!2sNilphamari!5e0!3m2!1sen!2sbd!4v1725433585714!5m2!1sen!2sbd" title="Home Address" width="150" height="75" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    </footer>
+    
+
+    
+</body>
+</html>
